@@ -63,8 +63,6 @@ class list{
             tail=temp;
             temp->next = NULL;
             delete temp->next;
-            
-
         }
 
     }// insert an element at given location
@@ -127,6 +125,7 @@ class list{
         }
         head = pre;
     }
+    // finding an element exist or not in a linked list
     void search(int x){
         Node* temp = head;
         while (temp->data != x || temp->next != NULL){
