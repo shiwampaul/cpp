@@ -10,11 +10,11 @@ class Time{
 int main() {
     Time t;
     cin >> t.hour >> t.min;
-    
+
     int Time::*secondsPtr = &Time::seconds;
     t.seconds = (t.hour*60 + t.min)*60;
 
-    cout << t.*secondsPtr;
+    cout <<"Total seconds: " << t.*secondsPtr;
     
       
     return 0;
